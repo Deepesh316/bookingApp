@@ -1,0 +1,9 @@
+<section id="rentalListing">
+  <h1 class="title">Your home all around the world</h1>
+  <div class="row">
+    <div class="col-md-3 col-xs-6" *ngFor="let rental of rentals">
+      <!-- pass rental to rental-list-item -->
+      <bkg-rental-list-item [currentRental]="rental"></bkg-rental-list-item>
+    </div>
+  </div>
+</section>
